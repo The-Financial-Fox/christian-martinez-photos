@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Martinez – AI for Finance Professor & Finance Senior Manager</title>
+  <meta name="description" content="Christian Martinez is a Finance Senior Manager, AI for Finance Professor, and author of Smart Finance. He has trained 20,000+ CFOs and senior finance leaders worldwide." />
+  <meta name="keywords" content="Christian Martinez, AI for Finance, FP&A, CFO training, Finance Senior Manager, AI Finance Club, Smart Finance book, LinkedIn Learning, finance professor" />
+  <meta name="author" content="Christian Martinez" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Christian Martinez – AI for Finance Professor" />
+  <meta property="og:description" content="Finance Senior Manager and AI for Finance Professor who has trained 20,000+ CFOs and senior finance leaders worldwide." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%28main%29.png" />
+  <meta property="og:type" content="profile" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Christian Martinez",
+    "jobTitle": "Finance Senior Manager & AI for Finance Professor",
+    "description": "Christian Martinez has trained over 20,000 CFOs, Fractional CFOs and senior finance leaders in AI for Finance. Author of Smart Finance: Leveraging AI for Enhanced Financial Planning and Analysis.",
+    "image": "https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%28main%29.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/christianmartinez",
+      "https://www.youtube.com/@TheFinancialFox"
+    ],
+    "knowsAbout": ["AI for Finance", "FP&A", "Finance Transformation", "Financial Planning and Analysis", "CFO Training"],
+    "alumniOf": "Master's Degree in Finance and Data Science"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0a1628;
+      --navy-mid: #112240;
+      --navy-light: #1a3358;
+      --red: #c0392b;
+      --red-bright: #e74c3c;
+      --gold: #d4a843;
+      --white: #f8f9fa;
+      --gray: #8892b0;
+      --light-gray: #ccd6f6;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(192,57,43,0.12) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(212,168,67,0.07) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 60px 80px 80px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--red-bright);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      font-weight: 900;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    h1 span {
+      color: var(--gold);
+      display: block;
+    }
+
+    .hero-title {
+      font-size: 15px;
+      color: var(--gray);
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+      font-weight: 400;
+    }
+
+    .hero-bio {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--light-gray);
+      max-width: 480px;
+      margin-bottom: 48px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      letter-spacing: 0.5px;
+    }
+
+    .link-btn.primary {
+      background: var(--red);
+      color: white;
+      border: 2px solid var(--red);
+    }
+    .link-btn.primary:hover { background: var(--red-bright); border-color: var(--red-bright); transform: translateY(-2px); }
+
+    .link-btn.outline {
+      background: transparent;
+      color: var(--light-gray);
+      border: 1px solid rgba(204,214,246,0.25);
+    }
+    .link-btn.outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    .hero-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: grayscale(20%);
+    }
+
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, var(--navy) 0%, transparent 20%, transparent 80%, var(--navy) 100%),
+                  linear-gradient(to bottom, transparent 70%, var(--navy) 100%);
+    }
+
+    /* ── STATS ── */
+    .stats {
+      background: var(--navy-mid);
+      border-top: 1px solid rgba(192,57,43,0.3);
+      border-bottom: 1px solid rgba(192,57,43,0.3);
+      padding: 48px 80px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--red-bright);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--gray);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 100px 80px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 48px;
+      color: var(--white);
+    }
+
+    h2 em {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    /* ── PHOTO GALLERY ── */
+    .gallery-section {
+      background: var(--navy-mid);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+
+    .photo-grid .photo {
+      overflow: hidden;
+      border-radius: 4px;
+      position: relative;
+      aspect-ratio: 3/4;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-grid .photo:nth-child(1) {
+      grid-column: span 2;
+      grid-row: span 2;
+      aspect-ratio: auto;
+    }
+
+    .photo-grid .photo:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(192,57,43,0.3);
+      z-index: 2;
+    }
+
+    .photo-grid .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      transition: filter 0.3s ease;
+    }
+
+    .photo-grid .photo:hover img {
+      filter: brightness(1.05);
+    }
+
+    .photo-grid .photo::after {
+      content: attr(data-caption);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 14px 14px;
+      background: linear-gradient(to top, rgba(10,22,40,0.9), transparent);
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--light-gray);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .photo-grid .photo:hover::after {
+      opacity: 1;
+    }
+
+    /* ── BOOK ── */
+    .book-section {
+      background: var(--navy);
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .book-cover {
+      background: linear-gradient(135deg, var(--navy-light), var(--navy-mid));
+      border: 1px solid rgba(192,57,43,0.3);
+      border-radius: 6px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .book-cover::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(to right, var(--red), var(--gold));
+    }
+
+    .book-title-display {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .book-sub {
+      font-size: 12px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    .book-author-tag {
+      margin-top: 24px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .book-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 24px;
+      color: var(--white);
+    }
+
+    .book-content p {
+      color: var(--light-gray);
+      line-height: 1.9;
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+
+    /* ── SPEAKING ── */
+    .speaking-section {
+      background: var(--navy-mid);
+    }
+
+    .speaking-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .speaking-card {
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 6px;
+      padding: 36px 32px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .speaking-card:hover {
+      border-color: rgba(192,57,43,0.5);
+      transform: translateY(-4px);
+    }
+
+    .speaking-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--red), var(--gold));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .speaking-card:hover::before { opacity: 1; }
+
+    .speaking-icon {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .speaking-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .speaking-card p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 60px 80px;
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .footer-name span { color: var(--red); }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--gray);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-image { height: 50vw; }
+      .hero-text { padding: 60px 32px; }
+      .stats { grid-template-columns: repeat(2, 1fr); padding: 40px 32px; }
+      section { padding: 60px 32px; }
+      .photo-grid { grid-template-columns: repeat(3, 1fr); }
+      .photo-grid .photo:nth-child(1) { grid-column: span 1; grid-row: span 1; aspect-ratio: 3/4; }
+      .book-grid { grid-template-columns: 1fr; gap: 40px; }
+      .speaking-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 20px; text-align: center; padding: 40px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-text">
+      <p class="eyebrow">Finance × Artificial Intelligence</p>
+      <h1>Christian<span>Martinez</span></h1>
+      <p class="hero-title">Finance Senior Manager &nbsp;·&nbsp; AI for Finance Professor &nbsp;·&nbsp; Author &nbsp;·&nbsp; Speaker</p>
+      <p class="hero-bio">
+        Helping CFOs and senior finance leaders harness the power of AI — through world-class education, transformative tools, and 10+ years of hands-on FP&A experience across three continents.
+      </p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/christianmartinez" target="_blank" rel="noopener" class="link-btn primary">LinkedIn</a>
+        <a href="https://www.youtube.com/@TheFinancialFox" target="_blank" rel="noopener" class="link-btn outline">YouTube</a>
+        <a href="https://www.aifinanceclub.com" target="_blank" rel="noopener" class="link-btn outline">AI Finance Club</a>
+        <a href="https://www.linkedin.com/learning" target="_blank" rel="noopener" class="link-btn outline">LinkedIn Learning</a>
+        <a href="#book" class="link-btn outline">📘 Smart Finance Book</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img
+        src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%28main%29.png"
+        alt="Christian Martinez – AI for Finance Professor and Finance Senior Manager"
+        title="Christian Martinez"
+      />
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">20K+</div>
+      <div class="stat-label">Finance Leaders Trained</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">40+</div>
+      <div class="stat-label">Developers & Engineers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Global Markets</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">10+</div>
+      <div class="stat-label">Years in FP&A</div>
+    </div>
+  </div>
+
+  <!-- PHOTO GALLERY -->
+  <section class="gallery-section">
+    <p class="section-label">Photos</p>
+    <h2>Christian Martinez — <em>In the Field</em></h2>
+    <div class="photo-grid">
+      <div class="photo" data-caption="Christian Martinez – AI for Finance">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%28main%29.png"
+             alt="Christian Martinez AI for Finance Professor" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – AI for Finance">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance.jpg"
+             alt="Christian Martinez Finance Senior Manager" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – Photo 2">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%282%29.jpg"
+             alt="Christian Martinez Finance Speaker" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – Photo 2 PNG">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%282%29.png"
+             alt="Christian Martinez AI Finance Club" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – Photo 3">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%283%29.jpg"
+             alt="Christian Martinez FP&A Expert" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – Photo 4">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%284%29.jpg"
+             alt="Christian Martinez World Finance Forum Speaker" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – Photo 5">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%285%29.jpg"
+             alt="Christian Martinez LinkedIn Learning" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – Photo 6">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%286%29.jpg"
+             alt="Christian Martinez AI Finance Accelerator" />
+      </div>
+      <div class="photo" data-caption="Christian Martinez – Photo 7">
+        <img src="https://raw.githubusercontent.com/The-Financial-Fox/christian-martinez-photos/main/Christian%20Martinez%20AI%20Finance%20%287%29.png"
+             alt="Christian Martinez Finance Transformation" />
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="book-section" id="book">
+    <p class="section-label">Published Work</p>
+    <div class="book-grid">
+      <div class="book-cover">
+        <div class="book-title-display">Smart Finance: Leveraging AI for Enhanced Financial Planning and Analysis</div>
+        <div class="book-sub">The definitive guide for finance leaders navigating the AI revolution</div>
+        <div class="book-author-tag">by Christian Martinez</div>
+      </div>
+      <div class="book-content">
+        <h3>The Book on AI for <em style="color:var(--gold);font-style:normal;">Finance Professionals</em></h3>
+        <p>
+          <em>Smart Finance</em> is the essential playbook for CFOs, FP&A leaders, and finance professionals ready to harness artificial intelligence for real competitive advantage. Drawing on Christian's experience training over 20,000 senior finance leaders and leading a team of 40+ engineers across 20+ markets, this book bridges the gap between AI theory and finance practice.
+        </p>
+        <a href="#" class="link-btn primary">Get the Book</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKING -->
+  <section class="speaking-section">
+    <p class="section-label">International Speaking</p>
+    <h2>Keynotes & <em>Conferences</em></h2>
+    <div class="speaking-grid">
+      <div class="speaking-card">
+        <div class="speaking-icon">🌍</div>
+        <h3>World Finance Forum</h3>
+        <p>Keynote presenter on AI-driven financial transformation for global finance executives and CFOs.</p>
+      </div>
+      <div class="speaking-card">
+        <div class="speaking-icon">🤖</div>
+        <h3>World Summit AI</h3>
+        <p>Featured speaker on the intersection of artificial intelligence and enterprise finance at one of the world's premier AI events.</p>
+      </div>
+      <div class="speaking-card">
+        <div class="speaking-icon">📊</div>
+        <h3>EMEA FP&A Summit</h3>
+        <p>Presenter on advanced AI applications for Financial Planning & Analysis across the EMEA region.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-name">Christian <span>Martinez</span></div>
+    <div class="footer-copy">Finance Senior Manager · AI for Finance Professor · Author · Speaker</div>
+  </footer>
+
+</body>
+</html>
